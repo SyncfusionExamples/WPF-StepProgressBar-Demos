@@ -1,2 +1,2 @@
 # Introducing-StepProgressbar-in-WPF
-This repository contains getting started sample for WPF StepProgressBar control.
+This repository contains demo samples for WPF StepProgressBar control.
