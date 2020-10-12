@@ -25,8 +25,18 @@ namespace MarkerTemplateSelectorSample
             InitializeComponent();
         }
     }
+
+    /// <summary>
+    /// Represents the step view item template selector class.
+    /// </summary>
     public class StepViewItemMarkerTemplateSelector : DataTemplateSelector
     {
+        /// <summary>
+        /// Selects the template based on the step view item status.
+        /// </summary>
+        /// <param name="item">step view item.</param>
+        /// <param name="container">step progress bar.</param>
+        /// <returns></returns>
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
             StepViewItem stepViewItem = item as StepViewItem;
