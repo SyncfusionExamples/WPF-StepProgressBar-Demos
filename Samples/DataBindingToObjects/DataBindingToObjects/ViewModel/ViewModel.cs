@@ -70,25 +70,25 @@ namespace DataBindingToObjects
             StepItem orderedStepViewItem = new StepItem()
             {
                 ModelText = "Ordered",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem shippedStepViewItem = new StepItem()
             {
                 ModelText = "Shipped",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem packedStepViewItem = new StepItem()
             {
                 ModelText = "Packed",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepItem deliveredStepViewItem = new StepItem()
             {
                 ModelText = "Delivered",
-                TitleSpace = new Thickness(0, 8, 0, 0)
+                TitleSpace = 8
             };
 
             StepViewItems.Add(orderedStepViewItem);

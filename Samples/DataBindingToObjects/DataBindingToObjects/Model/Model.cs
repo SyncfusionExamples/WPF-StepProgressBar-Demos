@@ -23,6 +23,6 @@ namespace DataBindingToObjects
         /// <summary>
         /// Gets or sets the space between text and step view item.
         /// </summary>
-        public Thickness TitleSpace { get; set; }
+        public double TitleSpace { get; set; }
     }
 }
