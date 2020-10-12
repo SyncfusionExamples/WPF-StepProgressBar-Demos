@@ -1,0 +1,80 @@
+﻿<Window
+    x:Class="MarkerTemplateSelectorSample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MarkerTemplateSelectorSample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate x:Key="IndeterminateTemplate">
+            <Grid>
+                <Ellipse
+                    Width="35"
+                    Height="35"
+                    Fill="#00ccb1"
+                    Stroke="#00ccb1" />
+                <Path
+                    Width="12"
+                    Height="12"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Data="M8,0 C12.411011,0 16,3.5890198 16,8 16,12.411011 12.411011,16 8,16 3.5889893,16 0,12.411011 0,8 0,3.5890198 3.5889893,0 8,0 z"
+                    Fill="White"
+                    Stretch="Fill" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="ActiveTemplate">
+            <Grid>
+                <Ellipse
+                    Width="35"
+                    Height="35"
+                    Fill="#00ccb1"
+                    Stroke="#00ccb1" />
+                <Path
+                    Width="16"
+                    Height="11"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Data="M15.288992,0 L15.997,0.70702839 5.7260096,11.000999 0,5.8859658 0.66601563,5.1399964 5.6870084,9.6239898 z"
+                    Fill="White"
+                    Stretch="Fill"
+                    Stroke="White" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="InactiveTemplate">
+            <Grid>
+                <Ellipse
+                    Width="35"
+                    Height="35"
+                    Fill="#FFFFFF"
+                    Stroke="#D2D2D2" />
+            </Grid>
+        </DataTemplate>
+        <local:StepViewItemMarkerTemplateSelector x:Key="stepViewItemMarkerTemplateSelector" />
+    </Window.Resources>
+    <Grid>
+        <syncfusion:SfStepProgressBar
+            x:Name="stepperControlName"
+            Margin="40"
+            ActiveConnectorColor="#00ccb1"
+            ItemsSource="{Binding StepViewItems}"
+            MarkerTemplateSelector="{StaticResource stepViewItemMarkerTemplateSelector}"
+            SelectedIndex="2"
+            SelectedItemStatus="Indeterminate">
+            <syncfusion:SfStepProgressBar.ItemContainerStyle>
+                <Style TargetType="syncfusion:StepViewItem">
+                    <Setter Property="MarkerWidth" Value="35" />
+                    <Setter Property="MarkerHeight" Value="35" />
+                </Style>
+            </syncfusion:SfStepProgressBar.ItemContainerStyle>
+        </syncfusion:SfStepProgressBar>
+    </Grid>
+</Window>

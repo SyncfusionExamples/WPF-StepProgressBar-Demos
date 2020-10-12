@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<StepItems SelectedIndex="3">
+
+     <Step Name="Ordered"/>
+     <Step Name="Shipped"/>
+     <Step Name="Packed"/>
+     <Step Name="Delivered"/>
+
+</StepItems>
