@@ -1,0 +1,101 @@
+﻿<Page
+    x:Class="PageViewer.StudentInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:PageViewer"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    Title="StudentInfo"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    syncfusionskin:SfSkinManager.VisualStyle="MaterialLight"
+    mc:Ignorable="d">
+
+    <Grid x:Name="studentInfoGrid" Visibility="Visible">
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Margin="80,0,0,0"
+                FontSize="20"
+                FontWeight="SemiBold"
+                Text="Student Details" />
+            <TextBlock
+                Grid.Row="1"
+                Margin="80,20,0,0"
+                FontWeight="SemiBold"
+                Text="Student Name" />
+            <TextBox
+                Grid.Row="2"
+                Margin="80,10,20,0"
+                Padding="0,2,0,2"
+                Text="David Carter" />
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,20,0,0"
+                FontWeight="SemiBold"
+                Text="Student Id" />
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="20,10,80,0"
+                Padding="0,2,0,2"
+                Text="503" />
+            <TextBlock
+                Grid.Row="3"
+                Margin="80,20,0,0"
+                FontWeight="SemiBold"
+                Text="Date of Birth" />
+            <DatePicker Grid.Row="4" Margin="80,10,20,0" />
+            <TextBlock
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="20,20,0,0"
+                FontWeight="SemiBold"
+                Text="Phone Number" />
+            <TextBox
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="20,10,80,0"
+                Padding="0,0,0,0"
+                Text="9876543434" />
+            <TextBlock
+                Grid.Row="5"
+                Margin="80,20,0,0"
+                FontWeight="SemiBold"
+                Text="Email" />
+            <TextBox
+                Grid.Row="6"
+                Margin="80,10,20,0"
+                Padding="0,2,0,2"
+                Text="david@mail.com" />
+            <TextBlock
+                Grid.Row="5"
+                Grid.Column="1"
+                Margin="20,20,0,0"
+                FontWeight="SemiBold"
+                Text="Address" />
+            <TextBox
+                Grid.Row="6"
+                Grid.Column="1"
+                Margin="20,10,80,0"
+                Padding="0,2,0,2"
+                Text="89 ,Chiaroscuro Road, Portland, 97219." />
+        </Grid>
+    </Grid>
+</Page>
