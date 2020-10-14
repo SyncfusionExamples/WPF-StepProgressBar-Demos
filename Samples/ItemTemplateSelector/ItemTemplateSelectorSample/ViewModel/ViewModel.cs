@@ -14,7 +14,7 @@ namespace ItemTemplateSelectorSample
     /// <summary>
     /// Represents the view model class.
     /// </summary>
-    public class ViewModel : INotifyPropertyChanged
+    public class StepViewModel : INotifyPropertyChanged
     {
         /// <summary>
         /// Represents the step view items.
@@ -53,9 +53,9 @@ namespace ItemTemplateSelectorSample
         }
 
         /// <summary>
-        /// Initialize the instance of <see cref="ViewModel"/> class.
+        /// Initialize the instance of <see cref="StepViewModel"/> class.
         /// </summary>
-        public ViewModel()
+        public StepViewModel()
         {
             StepViewItems = new ObservableCollection<string>();
             PopulateData();

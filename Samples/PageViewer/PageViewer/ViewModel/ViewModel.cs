@@ -10,7 +10,7 @@
     /// <summary>
     /// Represents the view model class.
     /// </summary>
-    public class ViewModel : INotifyPropertyChanged
+    public class StepViewModel : INotifyPropertyChanged
     {
         private ICommand nextCommand;
         private ICommand previousCommand;
@@ -19,9 +19,9 @@
         private ObservableCollection<string> stepViewItems;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ViewModel"/> class.
+        /// Initializes a new instance of the <see cref="StepViewModel"/> class.
         /// </summary>
-        public ViewModel()
+        public StepViewModel()
         {
             this.StepViewItems = new ObservableCollection<string>();
             this.PopulateData();
@@ -116,9 +116,9 @@
 
         private void PopulateData()
         {
-            this.StepViewItems.Add("StudentInfo");
-            this.StepViewItems.Add("AcademicInfo");
-            this.StepViewItems.Add("PaymentInfo");
+            this.StepViewItems.Add("Student Info");
+            this.StepViewItems.Add("Academic Info");
+            this.StepViewItems.Add("Payment Info");
         }
 
         private void ExecutePreviousForm(object param)

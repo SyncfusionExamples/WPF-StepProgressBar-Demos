@@ -11,7 +11,7 @@
     Height="450"
     mc:Ignorable="d">
     <Window.DataContext>
-        <local:ViewModel />
+        <local:StepViewModel />
     </Window.DataContext>
     <Window.Resources>
         <DataTemplate x:Key="IndeterminateTemplate">
