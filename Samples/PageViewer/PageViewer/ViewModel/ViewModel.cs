@@ -15,7 +15,6 @@
         private ICommand nextCommand;
         private ICommand previousCommand;
         private int selectedIndex;
-        private TimeSpan animationDuration = new TimeSpan(0, 0, 0, 0, 500);
         private ObservableCollection<string> stepViewItems;
 
         /// <summary>
@@ -46,23 +45,6 @@
             {
                 this.selectedIndex = value;
                 this.OnPropertyChanged(new PropertyChangedEventArgs(nameof(this.SelectedIndex)));
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the animation duration for step progress bar.
-        /// </summary>
-        public TimeSpan AnimationDuration
-        {
-            get
-            {
-                return this.animationDuration;
-            }
-
-            set
-            {
-                this.animationDuration = value;
-                this.OnPropertyChanged(new PropertyChangedEventArgs(nameof(this.AnimationDuration)));
             }
         }
 
@@ -150,12 +132,7 @@
             {
                 if (frame.NavigationService.CanGoBack)
                 {
-                    frame.GoBack();
-                }
-
-                if (frame.NavigationService.CanGoBack)
-                {
-                    frame.GoBack();
+                    frame.NavigationService.Navigate(new Uri("Resources/StudentInfo.xaml", UriKind.Relative));
                 }
 
                 this.SelectedIndex = 0;

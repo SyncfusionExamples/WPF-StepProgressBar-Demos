@@ -36,7 +36,6 @@
         <Syncfusion:SfStepProgressBar
             Grid.Row="1"
             Margin="0,20,0,20"
-            AnimationDuration="{Binding AnimationDuration}"
             ItemSpacing="250"
             ItemsSource="{Binding StepViewItems}"
             SelectedIndex="{Binding SelectedIndex}"
