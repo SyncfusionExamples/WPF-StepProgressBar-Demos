@@ -1,19 +1,54 @@
-# StepProgressBar control examples
-This repository contains a collection of samples that demonstrate the core features and usage of the StepProgressBar control. StepProgressBar is designed to visually represent progress through a sequence of steps, making it ideal for workflows, multi‑stage processes, and guided user experiences.
+# WPF StepProgressBar Demos
 
-## Overview
-The StepProgressBar control presents progress as a series of distinct steps, allowing users to easily understand their current position and remaining progress. The samples in this repository illustrate how to bind data, customize templates, and configure the control for different real‑world scenarios.
+This repository contains a collection of **demo applications that showcase the Syncfusion WPF StepProgressBar control**.  The samples help developers understand how to configure, customize, and integrate the StepProgressBar into WPF applications.
 
-##  Getting Started
-These samples help developers quickly integrate the StepProgressBar control into their applications and understand its basic setup and behavior.
+---
 
-Data binding with objects to dynamically populate steps from a data source
-Data binding with XML for declarative and structured step definitions
-ItemTemplateSelector to customize the appearance of individual steps based on state or data
-MarkerTemplateSelector to control the visual representation of markers for each step
+## 🔍 Overview
+
+The **Syncfusion WPF StepProgressBar** control is used to visually represent progress using a sequence of steps. It is commonly used in scenarios where a process is broken down into clear, sequential stages.
+
+These demos focus on presenting step‑based progress in a clean, intuitive, and customizable way.
+
+---
+
+## ✅ What This Repository Demonstrates
+
+- Creating a StepProgressBar in WPF
+- Displaying progress as a sequence of steps
+- Updating step status programmatically
+- Customizing step appearance and layout
+- Using StepProgressBar for multi‑stage workflows
+- Integrating StepProgressBar into real‑world UI scenarios
+
+---
+
+## Demo Structure
+
+Each demo in this repository is designed to highlight a **specific feature or usage pattern** of the StepProgressBar control.
+
+Typical demos include:
+- Basic StepProgressBar setup
+- Horizontal and vertical layouts
+- Step status updates (Completed, InProgress, Pending)
+- Custom styling and themes
+- Real‑world workflow examples
+
+---
+
+## Key Features of StepProgressBar
+
+- Step‑based progress visualization
+- Clear indication of current and completed steps
+- Customizable step content and appearance
+- Horizontal and vertical orientation support
+- Ideal for wizard‑style and workflow‑driven UIs
+
+---
+
+##  Demo samples list
 
 This repository contains the samples that demonstrate the functionalities of StepProgressBar control
-
 
 <table>
  <tr>
